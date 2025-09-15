@@ -11,7 +11,7 @@ void cesar(char texto[], int k)
         if (isalpha(texto[i]))
         {
             char base = isupper(texto[i]) ? 'A' : 'a';
-            texto[i] = (texto[i] - base + k + 26) % 26 + base;
+            texto[i] = (texto[i] - base + k + 27) % 27 + base;
         }
     }
 }
